@@ -8,6 +8,7 @@ html, body{
     padding: 0;
     background: black;
     color: snow;
+    font-size: 10pt;
     font-family: "Orkney", "Arial";
 }
 
@@ -78,4 +79,13 @@ input{
 	border: 1px solid rgba(200, 50, 50, 0.75);
 	color: rgba(175, 125, 125, 1);
 	padding: 5px 15px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
 }
