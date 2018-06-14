@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Orkney";
+    /*src:url('../assets/fonts/Orkney Regular.odf');*/
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: snow;
+    font-family: "Orkney", "Arial";
+}
+
+.row{
+    display: block;
+}
+.row>*{
+    display: inline-block;
+}
+
+.center{
+    text-align: center;
+}
+
+button{
+	padding: 10px 25px;
+	background: none;
+	color: snow;
+	border: 1px solid rgba(20, 80, 150, 1);
+	box-shadow: 0px 0px 20px rgba(20, 20, 100, 0.5) inset;
+}
+
+button:hover, button:active{
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: none;
+}
+
+button:active{
+    box-shadow: 0px 0px 20px rgba(20, 20, 100, 0.75);
+}
+
+label, input{
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: bottom;
+}
+
+label{
+    min-width: 100px;
+}
+
+input{
+    background: none;
+    border: none;
+    min-width: 250px;
+    border-bottom: 1px solid rgba(20, 80, 150, 1);
+    color: rgba(20, 80, 150, 1);
+    -webkit-text-fill-color: snow;
+}
+
+#login_form{
+    width: 400px;
+    margin: auto;
+    border: 1px solid rgba(20, 80, 150, 1);
+    box-shadow: 0px 0px 50px rgba(20, 20, 100, 0.75);
+    position: relative;
+    top: 250px;
+    padding: 15px;
+}
+
+
+.feedback.error{
+	background-color: rgba(125, 20, 20, 0.5);
+	border: 1px solid rgba(200, 50, 50, 0.75);
+	color: rgba(175, 125, 125, 1);
+	padding: 5px 15px;
+}

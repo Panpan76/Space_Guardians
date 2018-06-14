@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'form/fields.html.twig' %}
+{% block body %}
+    <div id="login_form">
+        {{ form_start(form) }}
+            {{ form_row(form.username) }}
+            {{ form_row(form.email) }}
+            {{ form_row(form.password.first) }}
+            {{ form_row(form.password.second) }}
+
+            <br />
+            <div class="row center">
+                <button type="submit">S'enregistrer</button>
+            </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock body %}
