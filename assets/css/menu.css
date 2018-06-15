@@ -1,0 +1,30 @@
+.menu{
+    border: 1px solid snow;
+}
+
+.menu.vertical{
+    width: 150px;
+    position: absolute;
+    left: 0;
+    top: 125px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.menu.vertical .menu-sep{
+    height: 0px;
+    border: 1px solid snow;
+    width: 80%;
+    margin: auto;
+}
+
+.menu.vertical .menu-item{
+    padding: 5px;
+}
+
+
+.menu.vertical .menu-item:hover{
+    background: radial-gradient(blue, black, black);
+    cursor: pointer;
+    /* background: rgba(25, 50, 75, 0.2); */
+}
