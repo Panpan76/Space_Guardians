@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Space Guardians{% endblock %}</title>
+        <link rel="icon" href="{{ asset('build/images/logo.png')|slice(1) }}" />
         {% block stylesheets %}
-        <link rel="stylesheet" href="{{ asset('build/js/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/js/app.css')|slice(1) }}">
         {% endblock %}
     </head>
     <body>
+        {% block menu %}{% include 'menus/menu.html.twig' %}{% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}
-        <script src="{{ asset('build/js/app.js') }}"></script>
+        <script src="{{ asset('build/js/app.js')|slice(1) }}"></script>
         {% endblock %}
     </body>
 </html>
